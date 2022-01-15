@@ -31,7 +31,10 @@ def sample_responses(input_text,update):
         return "Wat , Wat do you mean ?"
 
     if user_msg in ('/help'):
-        return "Just Die it will be helpful"
+        return """Just Die it will be helpful
+        /react - To Get the react,firebase referrence Links
+        /css - To Get the css reference Links
+        """
 
     if user_msg in ('/nakku'):
         return "yenga"
