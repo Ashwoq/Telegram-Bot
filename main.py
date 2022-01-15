@@ -28,14 +28,11 @@ def start(update: Update, context: CallbackContext):
 		"Hello sir, Welcome to the Bot.Please write\
 		/help to see the commands available.")
 
-def help(update: Update, context: CallbackContext):
+def react(update: Update, context: CallbackContext):
 	update.message.reply_text("""Available Commands :-
 	/RealEstate - Link to - Create Real Estate React App 
 	/Amazon - Link to - react-firebase course  built amazon 
 	/NetNinja_React_Fire - Link to -React-Firebase - 2018
-	/CSSNetNinja - Link to - NetNinja CSS - 2016
-	/CSSDown - Link to - CSS - Dropdown Animation
-	/CSSJonas - Link to -  CSS3 - HTML5 - Jonas 
 """)
 
 
@@ -56,28 +53,43 @@ def Amazon_url(update: Update, context: CallbackContext):
 		https://www.youtube.com/watch?v=RDV3Z1KCBvo&t=56s")
 
 
-def CSSNetNinja_url(update: Update, context: CallbackContext):
+def css(update: Update, context: CallbackContext):
+	update.message.reply_text("""Available Commands :-
+	/CSS_NetNinja_url - Link to - NetNinja CSS - 2016
+	/CSS_Down_url - Link to - CSS - Dropdown Animation
+	/CSS_Jonas_url - Link to - CSS - Jonas Tutorial
+	/CSS_Box_Animation_transition_url - Link to -  CSS - Basic -  Animation - Transition - Web Dev 
+""")
+
+def CSS_NetNinja_url(update: Update, context: CallbackContext):
 	update.message.reply_text("Youtube Link =>\
 	https://www.youtube.com/watch?v=jgw82b5Y2MU&list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5")
 
 
-def CSSDown_url(update: Update, context: CallbackContext):
+def CSS_Down_url(update: Update, context: CallbackContext):
 	update.message.reply_text("Youtube Link =>\https://www.youtube.com/watch?v=IF6k0uZuypA")
 
 
-def CSSJonas_url(update: Update, context: CallbackContext):
+def CSS_Jonas_url(update: Update, context: CallbackContext):
 	update.message.reply_text("Youtube Link =>\
 	https://www.youtube.com/watch?v=inEUEYSjKX8&list=PLvtRgUbhWmy9VgVvvxfiXXriELtjaYYmw")
 
 
-def unknown(update: Update, context: CallbackContext):
-	update.message.reply_text(
-		"Sorry '%s' is not a valid command" % update.message.text)
+	
+def CSS_Box_Animation_transition_url(update: Update, context: CallbackContext):
+	update.message.reply_text("Youtube Link =>\
+		https://www.youtube.com/watch?v=YszONjKpgg4&t=29s")
 
 
-def unknown_text(update: Update, context: CallbackContext):
-	update.message.reply_text(
-		"Sorry I can't recognize you , you said '%s'" % update.message.text)
+
+# def unknown(update: Update, context: CallbackContext):
+	# update.message.reply_text(
+		# "Sorry '%s' is not a valid command" % update.message.text)
+
+
+# def unknown_text(update: Update, context: CallbackContext):
+	# update.message.reply_text(
+		# "Sorry I can't recognize you , you said '%s'" % update.message.text)
 
 
 def main():        
@@ -85,17 +97,19 @@ def main():
     dp = updater.dispatcher
     updater.dispatcher.add_handler(CommandHandler('start', start))
     updater.dispatcher.add_handler(CommandHandler('RealEstate', RealEstate_url))
-    updater.dispatcher.add_handler(CommandHandler('help', help))
+    updater.dispatcher.add_handler(CommandHandler('react', react))
+    updater.dispatcher.add_handler(CommandHandler('css', css))
     updater.dispatcher.add_handler(CommandHandler('Amazon', Amazon_url))
     updater.dispatcher.add_handler(CommandHandler('NetNinja_React_Fire', NetNinja_React_Fire_url))
-    updater.dispatcher.add_handler(CommandHandler('CSSNetNinja', CSSNetNinja_url))
-    updater.dispatcher.add_handler(CommandHandler('CSSDown', CSSDown_url))
-    updater.dispatcher.add_handler(CommandHandler('CSSJonas', CSSJonas_url))
-    updater.dispatcher.add_handler(MessageHandler(Filters.text, unknown))
-    updater.dispatcher.add_handler(MessageHandler(
-	Filters.command, unknown)) # Filters out unknown commands
+    updater.dispatcher.add_handler(CommandHandler('CSS_Box_Animation_transition_url', CSS_Box_Animation_transition_url))
+    updater.dispatcher.add_handler(CommandHandler('CSS_NetNinja_url', CSS_NetNinja_url))
+    updater.dispatcher.add_handler(CommandHandler('CSS_Down_url', CSS_Down_url))
+    updater.dispatcher.add_handler(CommandHandler('CSS_Jonas_url', CSS_Jonas_url))
+    # updater.dispatcher.add_handler(MessageHandler(Filters.text, unknown))
+    # updater.dispatcher.add_handler(MessageHandler(
+	# Filters.command, unknown)) # Filters out unknown commands
     # Filters out unknown messages.
-    updater.dispatcher.add_handler(MessageHandler(Filters.text, unknown_text))
+    # updater.dispatcher.add_handler(MessageHandler(Filters.text, unknown_text))
     dp.add_handler(MessageHandler(Filters.text,handle_message))
     dp.add_error_handler(error)
 	
@@ -108,4 +122,8 @@ def main():
 
 main()
 
+
+# $ git add .
+# $ git commit -am "make it better"
+# $ git push heroku master
 
