@@ -35,9 +35,11 @@ def sample_responses(input_text,update):
         /react - To Get the react,firebase referrence Links
         /css - To Get the css reference Links
         """
-
     if user_msg in ('/nakku'):
         return "yenga"
+
+    if user_msg in ('/kishore'):
+        return "Atha Reply Varathunu Theriyum la Apram yenna?"
 
     return wrong()
 
