@@ -50,10 +50,10 @@ def sample_responses(input_text,update):
     if user_msg in ('/kishore' , '/kumar'):
         return "Still Waiting for the reply!?!"
     
-    if user_msg in ('/shameen'):
+    if user_msg in ('/shameem'):
         return "Na yarayum DEPEND Panni ila"
     
-    if user_msg in ('/faria','/manual'):
+    if user_msg in ('/faria','/manuel'):
         return "Aambala"
     
     if user_msg in ('/pragha','/yeanga'):
