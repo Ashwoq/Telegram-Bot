@@ -56,7 +56,7 @@ def sample_responses(input_text,update):
     if user_msg in ('/faria','/manuel'):
         return "Aambala"
     
-    if user_msg in ('/pragha','/yeanga'):
+    if user_msg in ('/praghadheesh','/yeanga'):
         return "Saptiyaa?"
     
     if user_msg in ('/vasan','/vasanbro','/keerthi','/keerthibro','/srk'):
