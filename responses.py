@@ -1,4 +1,5 @@
 from datetime import datetime
+import time
 import random
 
 def wrong():
@@ -39,33 +40,34 @@ def sample_responses(input_text,update):
     if user_msg in ('/str'):
         return "Wat , Wat do you mean ?"
 
-    if user_msg in ('/help'):
-        return """Just Die it will be helpful
-    /react - To Get the react,firebase referrence Links
-    /css - To Get the css reference Links
-        """
+    # if user_msg in ('/help'):
+    #     return """Just Die it will be helpful
+    # /react - To Get the react,firebase referrence Links
+    # /css - To Get the css reference Links
+    #     """
     if user_msg in ('/nakku'):
         return "Why are You GAY ?"
 
     if user_msg in ('/kishore' , '/kumar'):
-        return "Still Waiting for the reply!?!"
+        time.sleep(5)
+        return "PS(After 5 sec) : Reply Varathu"
     
     if user_msg in ('/shameem'):
-        return "Na yarayum DEPEND Panni ila"
+        return "Na yarayum DEPENDENT Panni ila"
     
     if user_msg in ('/faria','/manuel'):
         return "Aambala"
-    
+        
     if user_msg in ('/praghadheesh','/yeanga'):
-        return "Saptiyaa?"
+        return "Na therinju thaa panune but Intentional ah and wanted ah panala !!!"
     
     if user_msg in ('/vasan','/vasanbro','/keerthi','/keerthibro','/srk'):
         return "Konjamachum Kuchathodu vaalu daw"
     
+    if user_msg in ('/meet','/Meet','/meet link','/Meet Link',"/link"):
+        return "https://meet.google.com/jjc-hcqr-jcr"
 
-
-
+    if( user_msg)in ('/hosting','/output','/firebase'):
+        return "mugavari-foundation-pt3.web.app"
 
     return wrong()
-
-

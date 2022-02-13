@@ -11,9 +11,20 @@ print("Bot Started...")
 import os
 PORT = int(os.environ.get('PORT', 5000))
 
-# def help_command(update,context):
-#     update.message.reply_text("Die")
- 
+
+def help_command(update,context):
+    update.message.reply_text("""
+	JFEB 14 Kulla Project Mudikiro !!! SLICE PANROM !!!
+	(Few Commands Listed Below)
+
+
+    /meet - To get the meet link   
+	/hosting - To get the output link
+	/output - To get the output link
+
+
+	""")
+
 def handle_message(update ,context):
     text = str(update.message.text).lower()
     response = r.sample_responses(text,update)
@@ -96,6 +107,7 @@ def main():
     updater = Updater(keys.API_KEY,use_context=True)
     dp = updater.dispatcher
     updater.dispatcher.add_handler(CommandHandler('start', start))
+    updater.dispatcher.add_handler(CommandHandler('help', help_command))
     updater.dispatcher.add_handler(CommandHandler('RealEstate', RealEstate_url))
     updater.dispatcher.add_handler(CommandHandler('react', react))
     updater.dispatcher.add_handler(CommandHandler('css', css))
