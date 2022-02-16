@@ -64,10 +64,14 @@ def sample_responses(input_text,update):
     if user_msg in ('/vasan','/vasanbro','/keerthi','/keerthibro','/srk'):
         return "Konjamachum Kuchathodu vaalu daw"
     
+    
     if user_msg in ('/meet','/Meet','/meet link','/Meet Link',"/link"):
         return "https://meet.google.com/jjc-hcqr-jcr"
 
-    if( user_msg)in ('/hosting','/output','/firebase'):
+    if( user_msg)in ('/gen1'):
         return "mugavari-foundation-pt3.web.app"
+
+    if( user_msg)in ('/gen2'):
+        return "https://mugavari-foundations-gen-2.web.app/"
 
     return wrong()

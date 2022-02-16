@@ -11,17 +11,19 @@ print("Bot Started...")
 import os
 PORT = int(os.environ.get('PORT', 5000))
 
+# JFEB 14 Kulla Project Mudikiro !!! SLICE PANROM !!!
+# (Few Commands Listed Below)
 
 def help_command(update,context):
     update.message.reply_text("""
-	JFEB 14 Kulla Project Mudikiro !!! SLICE PANROM !!!
-	(Few Commands Listed Below)
+	
+	Mugavari Foundations Gen-2 REBIRTH ❤️‍🔥
 
+	Few Commands Are Listed Below
 
     /meet - To get the meet link   
-	/hosting - To get the output link
-	/output - To get the output link
-
+	/gen1 - To get the output link
+	/gen2 - To get the output link
 
 	""")
 
