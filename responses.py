@@ -3,7 +3,7 @@ import time
 import random
 
 def wrong():
-    n = random.randint(0,8)
+    n = random.randint(0,12)
     if(n<=1):
         return "Moodevi Command ah Olunga type pannu!!!"
     if(n>1 and n<=2):
@@ -15,10 +15,17 @@ def wrong():
     if(n>5 and n<=6):
         return "Konjamachum Kuchathoda Vaalu Command Thappu!!!"
     if(n>6 and n<=7):
-        return "Oru Command ah kuda correct ah poda theriyala Ne yella Yenga Pass agi .... Romba Kastam "
-    if(n>6 and n<=7):
-        return "CHI!!! Command Thappu daw"
-    
+        return "Oru Command ah kuda correct ah poda theriyala Ne yella Yenga .... .... Romba Kastam "
+    if(n>7 and n<=8):
+        return "CHI!!! Command Thappu"
+    if(n>8 and n<=9):
+        return "Intha Command ah Ajay ta kelunga (Command Wrong)"
+    if(n>9 and n<=10):
+        return "Ajay ah keta tha sollunga (Command Wrong)"
+    if(n>10 and n<=11):
+        return "Unagalukku Ajay Theriyuma bro (Command Wrong)"
+    if(n>11 and n<=12):
+        return "How do I tell you!!! (Command Wrong)"
 
 
 def sample_responses(input_text,update):
@@ -26,11 +33,21 @@ def sample_responses(input_text,update):
     if user_msg in ('/hello',"/hi","/hai"):
         return "Vanakkam!!!"
 
-    if user_msg in ('/username'):
+    if user_msg == ('/instacode'):
         if(update.message.chat.type =='group'):
-            return update.message.from_user.username
+            # return update.message.from_user.username
+            if(update.message.from_user.username == ("AshwoqDedathS" or "kishore0127" or "srk_1511")):
+                return "#slicep@ndrom_chi#"
+            else:
+                return """You are not authorised to know this information For more details contact HEDITH founders 
+                : @srk_1511 / @kishore0127"""
+
         if(update.message.chat.type =='private'):
-            return update.message.chat.username
+            if(update.message.chat.username == ("AshwoqDedathS" or "kishore0127" or "srk_1511")):
+                return "#slicep@ndrom_chi#"
+            else:
+                return """You are not authorised to know this information For more details contact HEDITH founders 
+                : @srk_1511 / @kishore0127"""
 
     if user_msg in ('/time','/time?'):
         now = datetime.now()
@@ -64,7 +81,6 @@ def sample_responses(input_text,update):
     if user_msg in ('/vasan','/vasanbro','/keerthi','/keerthibro','/srk'):
         return "Konjamachum Kuchathodu vaalu daw"
     
-    
     if user_msg in ('/meet','/Meet','/meet link','/Meet Link',"/link"):
         return "https://meet.google.com/jjc-hcqr-jcr"
 
@@ -73,5 +89,6 @@ def sample_responses(input_text,update):
 
     if( user_msg)in ('/gen2'):
         return "https://mugavari-foundations-gen-2.web.app/"
+
 
     return wrong()

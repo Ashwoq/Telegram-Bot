@@ -16,17 +16,15 @@ PORT = int(os.environ.get('PORT', 5000))
 
 def help_command(update,context):
     update.message.reply_text("""
+	FEB 14 Kulla Project Mudikiro !!! SLICE PANROM !!!
+	(Few Commands Listed Below)
 	
-	Mugavari Foundations Gen-2 REBIRTH ❤️‍🔥
-
-	Few Commands Are Listed Below
-
-    /meet - To get the meet link   
+	/meet - To get the meet link   
 	/gen1 - To get the output link
 	/gen2 - To get the output link
 
 	""")
-
+ 
 def handle_message(update ,context):
     text = str(update.message.text).lower()
     response = r.sample_responses(text,update)
@@ -38,61 +36,7 @@ def error(update,context):
 
 def start(update: Update, context: CallbackContext):
 	update.message.reply_text(
-		"Hello sir, Welcome to the Bot.Please write\
-		/help to see the commands available.")
-
-def react(update: Update, context: CallbackContext):
-	update.message.reply_text("""Available Commands :-
-	/RealEstate - Link to - Create Real Estate React App 
-	/Amazon - Link to - react-firebase course  built amazon 
-	/NetNinja_React_Fire - Link to -React-Firebase - 2018
-""")
-
-
-def NetNinja_React_Fire_url(update: Update, context: CallbackContext):
-	update.message.reply_text("Youtube Link =>\
-	https://www.youtube.com/watch?v=h9enkZBFCyA" )
-		
-
-
-def RealEstate_url(update: Update, context: CallbackContext):
-	update.message.reply_text("Youtube Link =>\
-	https://youtu.be/sKs9FiAHSN4")
-
-
-def Amazon_url(update: Update, context: CallbackContext):
-	update.message.reply_text(
-		"Youtube Link =>\
-		https://www.youtube.com/watch?v=RDV3Z1KCBvo&t=56s")
-
-
-def css(update: Update, context: CallbackContext):
-	update.message.reply_text("""Available Commands :-
-	/CSS_NetNinja_url - Link to - NetNinja CSS - 2016
-	/CSS_Down_url - Link to - CSS - Dropdown Animation
-	/CSS_Jonas_url - Link to - CSS - Jonas Tutorial
-	/CSS_Box_Animation_transition_url - Link to -  CSS - Basic -  Animation - Transition - Web Dev 
-""")
-
-def CSS_NetNinja_url(update: Update, context: CallbackContext):
-	update.message.reply_text("Youtube Link =>\
-	https://www.youtube.com/watch?v=jgw82b5Y2MU&list=PL4cUxeGkcC9iGYgmEd2dm3zAKzyCGDtM5")
-
-
-def CSS_Down_url(update: Update, context: CallbackContext):
-	update.message.reply_text("Youtube Link =>\https://www.youtube.com/watch?v=IF6k0uZuypA")
-
-
-def CSS_Jonas_url(update: Update, context: CallbackContext):
-	update.message.reply_text("Youtube Link =>\
-	https://www.youtube.com/watch?v=inEUEYSjKX8&list=PLvtRgUbhWmy9VgVvvxfiXXriELtjaYYmw")
-
-
-	
-def CSS_Box_Animation_transition_url(update: Update, context: CallbackContext):
-	update.message.reply_text("Youtube Link =>\
-		https://www.youtube.com/watch?v=YszONjKpgg4&t=29s")
-
+		"Mudiyathu Yenna Panuva")
 
 
 # def unknown(update: Update, context: CallbackContext):
@@ -110,15 +54,6 @@ def main():
     dp = updater.dispatcher
     updater.dispatcher.add_handler(CommandHandler('start', start))
     updater.dispatcher.add_handler(CommandHandler('help', help_command))
-    updater.dispatcher.add_handler(CommandHandler('RealEstate', RealEstate_url))
-    updater.dispatcher.add_handler(CommandHandler('react', react))
-    updater.dispatcher.add_handler(CommandHandler('css', css))
-    updater.dispatcher.add_handler(CommandHandler('Amazon', Amazon_url))
-    updater.dispatcher.add_handler(CommandHandler('NetNinja_React_Fire', NetNinja_React_Fire_url))
-    updater.dispatcher.add_handler(CommandHandler('CSS_Box_Animation_transition_url', CSS_Box_Animation_transition_url))
-    updater.dispatcher.add_handler(CommandHandler('CSS_NetNinja_url', CSS_NetNinja_url))
-    updater.dispatcher.add_handler(CommandHandler('CSS_Down_url', CSS_Down_url))
-    updater.dispatcher.add_handler(CommandHandler('CSS_Jonas_url', CSS_Jonas_url))
     # updater.dispatcher.add_handler(MessageHandler(Filters.text, unknown))
     # updater.dispatcher.add_handler(MessageHandler(
 	# Filters.command, unknown)) # Filters out unknown commands
@@ -140,4 +75,3 @@ main()
 # $ git add .
 # $ git commit -am "make it better"
 # $ git push heroku master
-
