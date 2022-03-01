@@ -92,7 +92,7 @@ def sample_responses(input_text,update):
     if( user_msg)in ('/gen2'):
         return "https://mugavari-foundations-gen-2.web.app/"
 
-    if user_msg in ('/todaymotivation'):
+    if user_msg in ('/goal'):
         return "INAIKI DATABASE CONNECT PANROM!!!! NALAIKI BACKEND MUDIKIROM"
 
     return wrong()
