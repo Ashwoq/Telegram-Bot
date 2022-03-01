@@ -3,7 +3,7 @@ import time
 import random
 
 def wrong():
-    n = random.randint(0,12)
+    n = random.randint(0,13)
     if(n<=1):
         return "Moodevi Command ah Olunga type pannu!!!"
     if(n>1 and n<=2):
@@ -11,7 +11,7 @@ def wrong():
     if(n>2 and n<=3):
         return "Command Thappu 10thu fail ah ne?"
     if(n>3 and n<=4):
-        return "Yeanga yen time ah waste pannanthinga COMMAND THAPPU!!!"
+        return "Yeanga yen time ah yethukku waste panuringa COMMAND THAPPU!!!"
     if(n>5 and n<=6):
         return "Konjamachum Kuchathoda Vaalu Command Thappu!!!"
     if(n>6 and n<=7):
@@ -26,6 +26,8 @@ def wrong():
         return "Unagalukku Ajay Theriyuma bro (Command Wrong)"
     if(n>11 and n<=12):
         return "How do I tell you!!! (Command Wrong)"
+    if(n>12 and n<=13):
+        return "Unna mathiri naanu vetiya erukenu nenachi yenaku neraya vela eruku yen time ah waste pannatha (Command Wrong)"
 
 
 def sample_responses(input_text,update):
@@ -33,7 +35,7 @@ def sample_responses(input_text,update):
     if user_msg in ('/hello',"/hi","/hai"):
         return "Vanakkam!!!"
 
-    if user_msg == ('/instacode'):
+    if (user_msg) in ('/instacode'):
         if(update.message.chat.type =='group'):
             # return update.message.from_user.username
             if(update.message.from_user.username == ("AshwoqDedathS" or "kishore0127" or "srk_1511")):
