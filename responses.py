@@ -1,10 +1,10 @@
 from datetime import datetime
 from email import message
-import time
+# import time
 import random
 
 def wrong():
-    n = random.randint(0,13)
+    n = random.randint(0,14)
     if(n<=1):
         return "Moodevi Command ah Olunga type pannu!!!"
     if(n>1 and n<=2):
@@ -27,8 +27,8 @@ def wrong():
         return "Unagalukku Ajay Theriyuma bro (Wrong Command)"
     if(n>11 and n<=12):
         return "How do I tell you!!! (Wrong Command)"
-    # if(n>12 and n<=13):
-    #     return "Unna mathiri naanu vetiya erukenu nenachi yenaku neraya vela eruku yen time ah waste pannatha (Wrong Command)"
+    else:
+        return "Command Thappu Anna"
 
 
 def sample_responses(input_text,update):
@@ -90,20 +90,20 @@ def sample_responses(input_text,update):
         return "Do you mean Lick ?"
 
     if user_msg in ('/kishore','/kumar','/kp'):
-        time.sleep(5)
+        # time.sleep(5)
         return "Solunga ANNA"
     
     if user_msg in ('/shameem','shameta','/zomata'):
-        return "Na yarayum DEPENDENT Panni ila"
+        return "Excuse Me !!!"
     
     if user_msg in ('/faria','/manuel','/man'):
-        return "Aambala"
+        return "Aari podu"
         
-    if user_msg in ('/praghadheesh','/yeanga'):
-        return "Na therinju thaa panune but Intentional ah and wanted ah panala !!!"
+    if user_msg in ('/praghadheesh','/yeanga','/prags'):
+        return "Payasam Kuduchiya Frand ? "
     
-    if user_msg in ('/vasan','/vasanbro','/keerthi','/keerthibro','/srk','/sr'):
-        return "Konjamachum Kuchathodu vaalu daw"
+    # if user_msg in ('/vasan','/vasanbro','/keerthi','/keerthibro','/srk','/sr'):
+    #     return "Konjamachum Kuchathodu vaalu daw"
     
     if user_msg in ('/meet','/Meet','/meet link','/Meet Link',"/link"):
         return "https://meet.google.com/cbb-xwtg-ztd?authuser=2"
