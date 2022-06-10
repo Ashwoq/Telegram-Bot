@@ -4,7 +4,7 @@ from email import message
 import random
 
 def wrong():
-    n = random.randint(0,14)
+    n = random.randint(0,15)
     if(n<=1):
         return "Moodevi Command ah Olunga type pannu!!!"
     if(n>1 and n<=2):
@@ -27,6 +27,10 @@ def wrong():
         return "Unagalukku Ajay Theriyuma bro (Wrong Command)"
     if(n>11 and n<=12):
         return "How do I tell you!!! (Wrong Command)"
+    if(n>12 and n<=13):
+        return "Unaku Ooorei Kotthu Command Thappu"
+    # if(n>14 and n<=15):
+    #     return "share your knowledge "
     else:
         return "Command Thappu Anna"
 
@@ -75,11 +79,11 @@ def sample_responses(input_text,update):
         date_time = now.strftime("%d/%m/%y, %H:%M:%S")
         return str(date_time)
     
-    if user_msg in ('/str'):
-        return "Wat , Wat do you mean ?"
+    if user_msg in ('/adhvik','/mala'):
+        return "mala mala malaaaaaaaaa..."
 
-    if user_msg in ('/tab'):
-        return ""
+    if user_msg in ('/athish','/thambi'):
+        return "Koyetta erukanum daw!!!"
 
     # if user_msg in ('/help'):
     #     return """Just Die it will be helpful
