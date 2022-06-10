@@ -93,14 +93,14 @@ def sample_responses(input_text,update):
         # time.sleep(5)
         return "Solunga ANNA"
     
-    if user_msg in ('/shameem','shameta','/zomata'):
+    if user_msg in ('/shameem','/shameta','/zomata'):
         return "Excuse Me !!!"
     
     if user_msg in ('/faria','/manuel','/man'):
         return "Aari podu"
         
     if user_msg in ('/praghadheesh','/yeanga','/prags'):
-        return "Payasam Kuduchiya Frand ? "
+        return "Payasam sapdringala Frand ? "
     
     # if user_msg in ('/vasan','/vasanbro','/keerthi','/keerthibro','/srk','/sr'):
     #     return "Konjamachum Kuchathodu vaalu daw"
@@ -109,11 +109,11 @@ def sample_responses(input_text,update):
         return "https://meet.google.com/cbb-xwtg-ztd?authuser=2"
         # return "https://meet.google.com/jjc-hcqr-jcr?pli=1&authuser=2"
 
-    if( user_msg)in ('/gen1'):
-        return "mugavari-foundation-pt3.web.app"
+    # if( user_msg)in ('/gen1'):
+    #     return "mugavari-foundation-pt3.web.app"
 
-    if( user_msg)in ('/gen2'):
-        return "https://mugavari-foundations-gen-2.web.app/"
+    # if( user_msg)in ('/gen2'):
+    #     return "https://mugavari-foundations-gen-2.web.app/"
 
     if user_msg in ('/todaymotivation'):
         return "Arrear Clear Panurom!!!"
