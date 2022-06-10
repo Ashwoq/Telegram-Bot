@@ -79,7 +79,7 @@ def sample_responses(input_text,update):
         date_time = now.strftime("%d/%m/%y, %H:%M:%S")
         return str(date_time)
     
-    if user_msg in ('/adhvik','/mala'):
+    if user_msg in ('/adhvik','/mala','/anna'):
         return "mala mala malaaaaaaaaa..."
 
     if user_msg in ('/athish','/thambi'):
@@ -95,7 +95,7 @@ def sample_responses(input_text,update):
 
     if user_msg in ('/kishore','/kumar','/kp'):
         # time.sleep(5)
-        return "Solunga ANNA"
+        return "47 kombu pothuma"
     
     if user_msg in ('/shameem','/shameta','/zomata'):
         return "Excuse Me !!!"
