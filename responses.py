@@ -48,7 +48,7 @@ def sample_responses(input_text,update):
         return "Vanakkam!!!"
 
     if user_msg in ('/command'):
-        return "Command na singular so Commands nu type pannu"
+        return "Command na singular so /Commands nu type pannu"
     
     if user_msg in ('/commands'):
         return """
@@ -118,9 +118,10 @@ def sample_responses(input_text,update):
     if user_msg in ('/athish','/thambi','/ramaiya'):
         return "Koyetta erukanum daw!!!"
 
-    if user_msg in ('/help'):
-        return """Just Die it will be helpful 
-        """
+    # if user_msg in ('/help'):
+    #     return """Just Die it will be helpful 
+    #     """
+
     if user_msg in ('/slogan'):
         return "NAKKU"
         
