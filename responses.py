@@ -138,7 +138,7 @@ def sample_responses(input_text,update):
     if user_msg in ('/faria','/manuel','/man'):
         return "Aari podu"
     
-    if user_msg in ('/ss','/kombu','saree','/8lakh','/47kombu'):
+    if user_msg in ('/ss','/kombu','/saree','/8lakh','/47kombu'):
         return "Unwanted Topic... Kindly avoid it"
 
     if user_msg in ('/praghadheesh','/yeanga','/prags'):
@@ -150,7 +150,7 @@ def sample_responses(input_text,update):
     if user_msg in ('/dr','/dhinesh','/rajan'):
         return "Well bro, yena sourathunu theriyala"
     
-    if user_msg in ('/meet',"/link"):
+    if user_msg in ('/meet'):
         return "https://meet.google.com/cbb-xwtg-ztd?authuser=2"
 
     if user_msg in ("/link"):
@@ -184,7 +184,7 @@ def sample_responses(input_text,update):
         Athukunu Un Ishta ____ ku Kekatha 😄
         """
 
-    if user_msg in ('/dei','/daw','da'):
+    if user_msg in ('/dei','/daw','/da'):
         return "Call Me SIR !!! OKIE!!!"
 
     if user_msg in ('/mudiyathu','/no'):
