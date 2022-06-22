@@ -11,17 +11,11 @@ print("Bot Started...")
 import os
 PORT = int(os.environ.get('PORT', 5000))
 
-# JFEB 14 Kulla Project Mudikiro !!! SLICE PANROM !!!
-# (Few Commands Listed Below)
-
 def help_command(update,context):
     update.message.reply_text("""
-	FEB 14 Kulla Project Mudikiro !!! SLICE PANROM !!!
-	(Few Commands Listed Below)
-	
-	/meet - To get the meet link   
-	/gen1 - To get the output link
-	/gen2 - To get the output link
+
+    JUST DIE IT WILL BE HELPFULL
+
 
 	""")
  
@@ -36,7 +30,7 @@ def error(update,context):
 
 def start(update: Update, context: CallbackContext):
 	update.message.reply_text(
-		"Mudiyathu Yenna Panuva")
+		"Seri Start Athuku Yenna Solla vara???")
 
 
 # def unknown(update: Update, context: CallbackContext):
